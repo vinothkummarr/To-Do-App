@@ -141,9 +141,8 @@ function todayTasks(){
 }
 
 function projectFilter(value){
-  display ="proj_filter"
+  display =value
   const task_container = document.getElementById('task_container').innerHTML=""
-  console.log(value)
   const filtering = (JSON.parse(localStorage.getItem('tasks')).filter(proj => proj.project === value))
   for(filt of filtering){
    createCards(filt)
@@ -164,8 +163,8 @@ function delete_card(value){
     allTasks()
   } else if (display == 'today_tasks'){
     todayTasks()
-  } else if(display == "proj_filter"){
-    projectFilter()
-  }
+  } else{
+    projectFilter(display)
+  } 
   console.log(projects)  
 }
