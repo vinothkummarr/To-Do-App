@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Checkinh</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+            <div id="head">
+        <header>
+            <h1>ToDo App</h1>
+        </header>
+    </div>
+    <div class="container">
+        <div id="left">
+    <div id="left1">
+        <h3>Home</h3>
+        <hr>
+        <ul id="btn_list">
+            <li><button onclick="allTasks()">All Tasks</button></li>
+            <li><button  onclick="important_tasks()">Important</button></li>
+            <li><button onclick="todayTasks()">Today</button></li>
+            
+        </ul>
+    </div>
+    <div id="left2">
+        <h3>Projects</h3>
+        <ul id="btn_list2">
+            <li><button onclick="projectFilter(id)" id="default">Default</button></li>
+        </ul>
+        
+    <div id="new_proj_space2"></div>
+    <div id="new_proj_space"></div>
+        <button id="add_proj_btn" onclick="add_proj()">ADD A PROJECT</button>
+    
+        
+    </div>
+</div>
+<div id="right">
+    <div id="right1">
+        <button>ADD A TASK</button>
+        <form action="" id="form">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required>
+        </div>
+        <div>
+            <label for="description" >Description</label>
+            <input type="text" id="description" >
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" id="date">
+        </div>
+        <div>
+            <label for="priority">Priority</label>
+            <select name="priority" id="priority" >
+                 <option value=""></option>
+                 <option value="important">Important</option>
+                 <option value="not_important">Not_important</option>
+                </select>
+            </div>
+            <div>
+            <label for="project">Project</label>
+            <select name="project" id="project">
+                <option value="default">Default</option>
+
+            </select>
+        </div>
+        <div>
+            <div>
+                <label for="confirm">Confirm</label>
+                <button type="button" id="button" onclick="submition()">Submit</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div id="right2">
+        <h3>Default</h3>
+        <hr>
+        <div id="task_container">
+            
+        </div>
+    </div>
+    </div>
+</div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>

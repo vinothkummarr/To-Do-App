@@ -1,0 +1,52 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+#default{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/***********Card*************/
+.card_p{
+    margin: 0;
+    margin-left: 15px;
+}
+#card{
+    background-color: rgba(255, 255, 0, 0.307);
+    width: 200px;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+}
+
+#task_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+/***********Left*************/
+#btn_list{
+    list-style-type: none;
+}
+#btn_list2{
+    list-style-type: none;
+}
+ul li{
+    margin: 15px;
+}
+button{
+    margin-left: 15px;
+}
